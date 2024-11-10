@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>complete responsive hotel agency website design </title>
+`
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+/>
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- custome css file link -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- header section starts -->
+    <header>
+   
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <a href="#" class="logo"><span>K</span>ING'S <span>S</span>ANCTUARY
+        <nav class="navbar">
+             <a href="#home">home</a>
+             <a href="#packages">packages</a>
+             <a href="#services">services</a>
+             <a href="#gallery">gallery</a>
+             <a href="#review">review</a>
+             <a href="#contact">contact</a>
+             <a href="#book">book</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+    </header>
+
+<!-- header section ends -->
+
+<!-- login form container -->
+
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form id="myform" action="#">
+        <h3>login</h3>
+    <label for="name">Name:</label>
+    <input type="name" class="box" placeholder="enter your name" onkeyup="validateName()" required>
+    <div class="message" id="nameMessage"></div>
+    <label for="email">Email:</label>
+    <input type="email" class="box" placeholder="enter your email" onkeyup="validateEmail()" required>
+    <div class="message" id="emailMessage"></div>
+    <label for="password">Password:</label>
+    <input type="password" class="box" placeholder="enter your password" onkeyup="validatePassword()" required>
+    <div class="message" id="passwordMessage"></div>
+    <input type="submit" value="login now" class="btn">
+    <input type="checkbox" id="remember">
+    <label for="remember">Remember me</label>
+    <p>forgot password? <a href="#">Click here</a></p>
+    <p>don't have any account? <a href="#">Register now</a></p>
+    </form>
+</div>
+
+<!-- home section starts -->
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>Welcome to a global icon of luxury</h3>
+        <p>Discover new places with us, luxury awaits</p>
+        <a href="discover.html" class="btn">discover more</a>
+    </div>
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="video4.mp4"></span>
+        <span class="vid-btn" data-src="video2.mp4"></span>
+        <span class="vid-btn" data-src="video1.mp4"></span>
+        <span class="vid-btn" data-src="video0.mp4"></span>
+        <span class="vid-btn" data-src="video3.mp4"></span>
+    </div>
+
+    <div class="video-container">
+        <video src="video1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section>
+
+
+<!-- home section ends -->
+
+
+
+<!-- packages section starts -->
+
+<section class="packages" id="packages">
+    <h1 class="heading">
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img decoding="async" src="bengaluru.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Bengaluru </h3>
+                <p>"Experience the epitome of sophistication and comfort at Bengaluru’s premier 5-star luxury
+                     hotel, where world-class service meets refined elegance in the heart of the city."</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rs.50,000/- <span>Rs.65,000/-</span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="sydney.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Sydney </h3>
+                <p>"Indulge in the ultimate luxury at Sydney’s 5-star hotel, offering breathtaking harbor views,
+                     exquisite dining, and unparalleled service in a chic and vibrant setting."</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rs.85,000/- <span>Rs.95,000/-</span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="dubai.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Dubai </h3>
+                <p>"Discover opulence at Dubai's 5-star luxury hotel, featuring lavish accommodations,
+                     exceptional dining experiences, and stunning views of the iconic skyline and desert."
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> Rs.99,000/- <span>Rs.1,20,000/-</span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="paris.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Paris </h3>
+                <p>"Experience unparalleled elegance at Paris's 5-star luxury hotel, where historic
+                     charm meets modern sophistication, complemented by exquisite dining and breathtaking
+                      views of the Eiffel Tower."
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rs.1,10,000/- <span>Rs.1,25,000/-</span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="bangkok.jpg"alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Bangkok </h3>
+                <p>"Immerse yourself in luxury at Bangkok’s 5-star hotel, offering a perfect
+                     blend of contemporary design, sumptuous amenities, and stunning city views
+                      amidst the vibrant heart of Thailand."</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rs.1,05,000 <span>Rs.1,25,000/-</span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="maldives1.webp" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Maldives </h3>
+                <p>"Unwind in paradise at the Maldives' 5-star luxury hotel, featuring overwater villas,
+                 pristine beaches, and unparalleled service set against the backdrop of crystal-clear
+                  turquoise waters."</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rs.2,25,000/- <span>Rs.2,50,000/-</span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="coorg.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Coorg </h3>
+                <p>"Experience serene luxury at Coorg’s 5-star hotel, nestled in lush 
+                    coffee estates, offering refined accommodations, immersive nature
+                     experiences, and stunning views of misty hills."</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> Rs.88,000/- <span>Rs.95,000/-</span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="ooty.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Ooty </h3>
+                <p>"Escape to tranquility at Ooty’s 5-star luxury hotel, where colonial
+                     charm meets modern comforts amidst lush hills and breathtaking views 
+                     of the Nilgiri mountains."
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rs.55,000/- <span>Rs.65,000/-</span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="manli.avif" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i>Manali  </h3>
+                <p>"Discover mountain elegance at Manali’s 5-star luxury hotel, where cozy
+                     sophistication, panoramic Himalayan views, and warm hospitality create
+                      the perfect alpine retreat."
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rs.75,000/- <span>Rs.83,000/-</span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="switzerland.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Switzerland </h3>
+                <p>"Indulge in Swiss luxury at its finest, with 5-star hotels offering
+                     breathtaking alpine views, world-class wellness, and impeccable service 
+                     in the heart of Switzerland's enchanting landscapes."
+                </p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rs.1,50,000/- <span>Rs.1,75,000/-</span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="malaysia.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> Malaysia </h3>
+                <p>"Experience Malaysia’s finest 5-star luxury, blending contemporary elegance 
+                    with tropical charm, exceptional service, and sweeping views of lush
+                     rainforests and vibrant cityscapes."</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rs.2,05,000/- <span>Rs.2,25,000/-</span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <img decoding="async" src="london.jpg" alt="">
+            <div class="content">
+                <h3><i class="fas fa-map-marker-alt"></i> London </h3>
+                <p>"Step into timeless sophistication at London’s 5-star luxury hotel, 
+                    where classic British charm meets modern luxury, complete with iconic
+                     city views and world-renowned service."</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price">Rs.1,95,000/- <span>Rs.2,10,000/-</span></div>
+                <a href="#book" class="btn">book now</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- packages section ends -->
+
+<!-- services section starts -->
+
+<section class="services" id="services">
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+                <h3>affordable hotels</h3>
+                <p>"Experience exceptional comfort and style without breaking the bank with our
+                    selection of affordable hotel options. Perfect for events of any size, our 
+                    budget-friendly accommodations offer modern amenities, cozy rooms, and personalized
+                    service to make every stay enjoyable. We believe everyone deserves a memorable
+                    experience, which is why we provide competitive rates alongside flexible booking options.
+                    Enjoy quality, convenience, and affordability all in one place, making your event both 
+                    special and economical."
+                </p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+                <h3>food and drinks</h3>
+                <p>"Elevate your event with our exceptional food and drink options,
+                     crafted to delight every palate. From gourmet meals prepared by 
+                     our renowned chefs to customized cocktail menus, we offer a diverse selection
+                      tailored to suit your occasion. Whether it's an elegant banquet, casual brunch,
+                       or themed beverage station, our culinary team uses fresh, locally sourced ingredients
+                        to create memorable dining experiences. Let us bring flavor and flair to your 
+                        gathering, making each bite and sip unforgettable."</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+                <h3>safety guide</h3>
+                <p>"Your safety is our top priority. Our hotel follows a comprehensive safety guide
+                     to ensure a secure and comfortable experience for all guests. With regular 
+                     sanitization, contactless check-in options, emergency protocols, and a trained
+                      on-site team, we’re committed to upholding the highest standards of health and
+                       security. Whether you're here for an event or a relaxing stay, rest assured 
+                       that every measure has been taken to provide a safe, worry-free environment
+                        for you and your guests."
+                </p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+                <h3>around the world</h3>
+                <p>"Bring the world to your event with our 'Around the World' experiences!
+                     We offer immersive international-themed setups, from decor and cuisine 
+                     to entertainment and cultural activities, allowing you to explore global 
+                     flavors and styles without leaving the hotel. Perfect for themed celebrations,
+                      corporate events, or gatherings with a twist, our team will transport your 
+                      guests from Parisian cafes to Caribbean beaches, creating a one-of-a-kind global
+                       journey for an unforgettable event."</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+                <h3>fastest travel</h3>
+                <p>"Experience seamless travel with our exclusive fast-track services! 
+                    We coordinate swift and efficient transportation options, from priority
+                     airport transfers to express check-ins, ensuring your journey is as
+                      smooth as your stay. Whether you’re arriving for a special event or
+                       departing after an unforgettable experience, our team is here to make
+                        every moment of your travel as efficient and stress-free as possible.
+                         Let us handle the logistics so you can focus on enjoying your time to
+                          the fullest."</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+                <h3>adventures</h3>
+                <p>"Turn your events into unforgettable adventures at our hotel! 
+                    Whether it's a team-building retreat, an action-packed family 
+                    gathering, or a unique celebration with friends, we offer exciting
+                     experiences tailored to your group’s interests. From guided hikes
+                      and beachside bonfires to urban exploration and culinary workshops,
+                       our dedicated team crafts immersive activities that blend luxury with
+                        thrill. Let us elevate your gathering with adventures that will create 
+                        lasting memories for every guest."</p>
+        </div>
+    </div>
+</section>
+
+
+<!-- services section ends -->
+
+<!-- gallery section starts -->
+
+<section class="gallery" id="gallery">
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+
+
+<div class="box-container">
+    <div class="box">
+        <img decoding="async" src="g1.jpg" alt="">
+        <div class="content">
+            <h3>Goa</h3>
+            <p>place to enjoy with sea water</p>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="g2.jpg" alt="">
+        <div class="content">
+            <h3>Sydney</h3>
+            <p>Cloudy place to enjoy</p>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="g3.jpg" alt="">
+        <div class="content">
+            <h3>China</h3>
+            <p>experiencing kung-fu nature by enjoying</p>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="g4.jpg" alt="">
+        <div class="content">
+            <h3>London</h3>
+            <p>parchute riding was too awesome</p>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="g5.jpg" alt="">
+        <div class="content">
+            <h3>Budha Gaya</h3>
+            <p>Enjoy your day by seeing mythological and historical monuments</p>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="g6.jpg" alt="">
+        <div class="content">
+            <h3>Russia</h3>
+            <p>Enjoy with ice glaciers</p>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="g7.jpg" alt="">
+        <div class="content">
+            <h3>Mysuru</h3>
+            <p>experiencing royalty living and creating new wonders</p>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="g8.jpg" alt="">
+        <div class="content">
+            <h3>Maldives</h3>
+            <p>enjoy your day in nights by living in huts</p>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="g9.jpg" alt="">
+        <div class="content">
+            <h3>Golden Bridge (Vietnam)</h3>
+            <p>enjoying hills locations and experiencing hand lifs a
+                 golden thread of walkway high above clifftops,as if the
+                  mountain itself has sprouted limbs.</p>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <div class="box">
+        <img decoding="async" src="g10.jpg" alt="">
+        <div class="content">
+            <h3>Netherlands</h3>
+            <p>enjoy your day in nights with lights in candels</p>
+            <a href="#" class="btn">see more</a>
+        </div></div>
+
+        <div class="box">
+            <img decoding="async" src="g11.jpg" alt="">
+            <div class="content">
+                <h3>Coorg</h3>
+                <p>enjoy your day by seeing hillstations</p>
+                <a href="#" class="btn">see more</a>
+            </div></div>
+
+            <div class="box">
+                <img decoding="async" src="g12.jpg" alt="">
+                <div class="content">
+                    <h3>Bangkok</h3>
+                    <p>Enjoy a romantic night by seeing water creatures</p>
+                    <a href="#" class="btn">see more</a>
+                </div></div>
+</div>
+</section>
+
+<!-- gallery section ends -->
+
+<!-- review section start -->
+
+<section class="review" id="review">
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+        </h1>
+        <div class="swiper mySwiper review-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img decoding="async" src="prabhas.jpg" alt="">
+                        <h3>Darling</h3>
+                        <p>"A blend of grandeur and intimacy that felt custom-made for our gathering.
+                             The ambiance was elegant yet relaxed, with each detail chosen thoughtfully
+                              to create a warm, welcoming space. The hotel team outdid themselves, balancing
+                               attentive service with a calm, unobtrusive presence. Everything from the decor
+                                to the cuisine was infused with finesse, making it a memorable evening.
+                                 Truly an experience of subtle luxury that resonates long after the night ends."</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img decoding="async" src="rdj.jpg" alt="">
+                        <h3>R.D.J</h3>
+                        <p>"Remarkable elegance with a conscience. The hotel paid close attention
+                             to sustainable touches, all while maintaining an ambiance of refined luxury.
+                              From eco-conscious decor to a menu that embraced locally-sourced options,
+                               each aspect felt intentional. It was an evening of subtle sophistication,
+                                where comfort, luxury, and mindfulness met. A memorable experience that
+                                 left a lasting impression."
+
+                        </p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img decoding="async" src="babu.webp" alt="">
+                        <h3>Mahesh Babu</h3>
+                        <p>"Understated elegance in every corner. The hotel created an ambiance that
+                             allowed us to connect in comfort and style. The setup was sharp yet welcoming,
+                              perfectly matching our group’s vibe. With incredible service, a top-notch drink
+                               selection, and an environment that spoke of quiet luxury, this event was truly
+                                memorable. The essence of good taste."
+
+                        </p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                    </div>
+                </div>
+    
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img decoding="async" src="appu.jpg" alt="">
+                        <h3>Appu</h3>
+                        <p>"A celebration of refinement. The event setup blended sophistication with a
+                             warm touch, transforming the evening into something quite special. Every detail,
+                              from the impeccable wine selection to the cozy yet stylish decor, was chosen with
+                               care. The staff was attentive in just the right measure, elevating our experience
+                                without intrusion. Classy, comfortable, and unforgettable."</p>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img decoding="async" src="bunny.jpg" alt="">
+                            <h3>Bunny</h3>
+                            <p>"Understated and elegant, just the way I like it. This space was tailored to our
+                                 needs without a hint of excess, creating a genuine and relaxed setting that felt
+                                  perfect for close friends. Nothing felt out of place, and the quality of service
+                                   made each moment feel effortless. There’s something about the simplicity of luxury
+                                    that speaks volumes, and this hotel delivered."</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img decoding="async" src="kohli.jpg" alt="">
+                            <h3>Virat Kohli</h3>
+                            <p>"A blend of comfort and class, ideal for a close gathering of friends. 
+                                The atmosphere was carefully crafted,elegant without being over the top.
+                                 Each detail, from the lighting to the subtle music, made the evening feel 
+                                 like a true escape. The staff struck the perfect balance—attentive without
+                                  hovering. It was a night of calm luxury, the way it should be."</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img decoding="async" src="ronaldo.jpg" alt="">
+                            <h3>Ronaldo</h3>
+                            <p>"This hotel knows how to host! The ambiance was perfectly pitched: sleek, comfortable,
+                                 and with a lot of character—just like the gents in our group. From the expertly crafted
+                                  cocktails to the relaxed but stylish setup, it was an ideal space to unwind and catch up.
+                                   Nothing too fussy, just the right amount of luxury. We felt at home, and that’s rare."</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img decoding="async" src="sonu.jpg" alt="">
+                            <h3>Sonu Sood</h3>
+                            <p>"An event space of sheer class and elegance. The team understood the assignment,
+                                 creating an environment that felt exclusive but welcoming. Every detail, from the
+                                  seamless service to the polished decor, contributed to an air of relaxed luxury. 
+                                  It was an unforgettable night for our close circle, where sophistication met comfort
+                                   in the best way possible."</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                        </div>
+                    </div>
+    
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img decoding="async" src="ntr.webp" alt="">
+                            <h3>jr.ntr</h3>
+                            <p>"From start to finish, an experience done right. The ambiance was inviting and effortlessly chic,
+                                 giving our gathering just the right amount of sophistication without feeling overdone.
+                                  It was a perfect setting to relax, connect, and enjoy ourselves in refined comfort. 
+                                  The entire evening was balanced beautifully—spot-on with the cocktails, the music, and the energy of the space. 
+                                  Definitely one for the books."</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img decoding="async" src="ramcharan.jpg" alt="">
+                            <h3>Ramcharan</h3>
+                            <p>"A masterclass in refined elegance and subtle sophistication. 
+                                The space was crafted with remarkable attention to detail—from the lighting that set the perfect mood to the curated selection of refreshments.
+                                 Every element worked in harmony, creating an intimate ambiance that felt as tailored as my finest suit.
+                                  The staff’s approach was flawless—attentive yet nearly invisible. Exquisite hospitality."</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="box">
+                            <img decoding="async" src="roshan.png" alt="">
+                            <h3>Hritik Roshan</h3>
+                            <p>"A meeting of luxury and innovation! The setup struck the perfect balance between warmth and modern flair,
+                                 with just the right touch of originality to keep it interesting.
+                                  The space felt vibrant and energized, making it ideal for close connections.
+                                   The entire experience resonated with our vibe, leaving us with memories that felt intimate and fresh. 
+                                   An effortlessly cool space for a memorable night."</p>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    
+    
+
+<!-- review section ends -->
+
+<!-- contact section starts -->
+
+<section class="contact" id="contact">
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+    <div class="row">
+        <div class="img">
+            <img decoding="async" src="contactus.jpg" alt="">
+        </div>
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="number">
+                <input type="text" placeholder="subject">
+            </div>
+            <textarea placeholder="message" name="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+    </div>
+</section>
+
+<!-- contact section ends -->
+
+<!-- brand section -->
+
+<section class="brand-container">
+    <div class="swiper mySwiper brand-slider">
+        <div class="swiper-wrapper wrapper">
+            <div class="swiper-slide"><img decoding="async" src="1.jpg" alt=""></div>
+            <div class="swiper-slide"><img decoding="async" src="2.jpg" alt=""></div>
+            <div class="swiper-slide"><img decoding="async" src="3.jpg" alt=""></div>
+            <div class="swiper-slide"><img decoding="async" src="4.jpg" alt=""></div>
+            <div class="swiper-slide"><img decoding="async" src="5.jpg" alt=""></div>
+            <div class="swiper-slide"><img decoding="async" src="6.jpg" alt=""></div>
+        </div>
+    </div>
+</section>
+
+<!-- book section starts -->
+
+<section class="book" id="book">
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+    <div class="row">
+        <div class="img">
+            <img decoding="async" src="booking.avif" alt="">
+        </div>
+
+        <form action="">
+              <div class="inputBox">
+                  <h3>where to</h3>
+                  <input type="text" placeholder="place name">
+              </div>
+              <div class="inputBox">
+                <h3>how many</h3>
+                <input type="number" placeholder="number of guests">
+            </div>
+            <div class="inputBox">
+                <h3>arrivals</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>leaving</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="book now">
+        </form>
+    </div>
+</section>
+<!-- book section ends -->
+
+<!-- footer section -->
+
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>about us</h3>
+            <p>"At KING'S SANCTUARY, we specialize in creating unforgettable experiences 
+                tailored to your unique event needs. From intimate gatherings to grand 
+                celebrations, our dedicated team is here to ensure every detail is flawless,
+                 offering world-class amenities, luxurious accommodations, and personalized 
+                 services. With venues that embody elegance and comfort, and a commitment to
+                  exceptional hospitality, we make every event extraordinary. Discover how we
+                   can turn your vision into reality with seamless booking, curated services,
+                    and an unforgettable setting that leaves lasting memories."</p>
+        </div>
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">USA</a>
+            <a href="#">india</a>
+            <a href="#">japan</a>
+            <a href="#">philippines</a>
+            <a href="#">france</a>
+            <a href="#">bangkok</a>
+            <a href="#">london</a>
+            <a href="#">switzerland</a>
+            <a href="#">dubai</a>
+        </div>
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home">home</a>
+            <a href="#packages">package</a>
+            <a href="#services">service</a>
+            <a href="#gallery">gallery</a>
+            <a href="#review">review</a>
+            <a href="#contact">contact</a>
+            <a href="#book">book</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">youtube</a>
+        </div>
+    </div>
+    <h1 class="credit"> created by <span>SHREYAS KS</span> |&copy; all rights reserved!! </h1>
+</section>
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- custome js file link -->
+    <script src="main.js"></script>
+</body>
+</html>
